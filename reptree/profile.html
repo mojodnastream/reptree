@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>RepTree</title>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- APP CONTENT -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+      <link href="css/treestyle.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" style="color:whitesmoke;text-align: left; font-size: 24px; margin-top: 8px;margin-bottom: 20px;">
+                    <a href="mytree.html" style="text-decoration: none;color:whitesmoke;text-align: left; font-size: 24px;">Reptree</a>
+                </div>
+                <div class="logout" style="text-align: right;float: right; ">
+                    <form class="form-logout" role="form">
+                        <input type="submit" value="Sign out" id="logout" class="btn btn-default btn-sm">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="reppedListModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header" id="titlediv">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 name="sTitle"></h4>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <table id="tableReps" class="table" style="color:#404040; font-size:26px;text-align: left;">
+
+                        <thead>
+
+                        </thead>
+                        <tbody>
+                        <!--insert rows from storage-->
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="giveRepModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header" id="titlediv">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 name="sTitle"></h4>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <table id="tableReps" class="table" style="color:#404040; font-size:26px;text-align: center;">
+
+                        <thead>
+
+                        </thead>
+                        <tbody align="center">
+                        <!--insert rows from storage-->
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="well panel panel-default" style="background-color : white;border: 1px solid lightslategrey;">
+                        <div class="panel-body">
+                            <div class="row" align="center">
+                                <div class="welcomePhoto" style="color:black;background-color:white;">
+                                    <img class="userPhoto" align="center">
+
+                                </div>
+                                <!--/col-->
+                                <div class="col-xs-12 " style="color: #404040;background: transparent;text-align: center;">
+                                    <h2 align="center" class="userTitle" style="color: #404040;"></h2>
+                                    <p class="userAbout" style="color: #404040;text-align: center;"></p>
+                                    <p class="userHead" style="color: #404040;"></p>
+                                    <!--<p style="color: #404040;"><strong>Skills: </strong>-->
+                                        <!--<span class="label label-info tags" style="color: #404040;">html5</span>-->
+                                        <!--<span class="label label-info tags" style="color: #404040;">jquery</span>-->
+                                        <!--<span class="label label-info tags" style="color: #404040;">bigdata</span>-->
+                                        <!--<span class="label label-info tags" style="color: #404040;">mongodb</span>-->
+                                        <!--<span class="label label-info tags" style="color: #404040;">bootstrap3</span>-->
+                                        <!--<span class="label label-info tags" style="color: #404040;">swift</span>-->
+                                    <!--</p>-->
+                                </div>
+                                <!--/col-->
+                                <!--<div class="clearfix"></div>-->
+                                <!--<div class="col-xs-12 col-sm-4" style="color: #404040;">-->
+                                    <!--<h2><strong> 248 </strong></h2>-->
+
+                                    <!--<button class="btn btn-success btn-block" style="color: #404040;><span class="fa fa-plus-circle"></span> Followers </button>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash;/col&ndash;&gt;-->
+                                <!--<div class="col-xs-12 col-sm-4" style="color: #404040;">-->
+                                    <!--<h2><strong>245</strong></h2>-->
+
+                                    <!--<button class="btn btn-info btn-block" style="color: #404040;><span class="fa fa-user"></span> Following </button>-->
+                                <!--</div>-->
+                                <!--&lt;!&ndash;/col&ndash;&gt;-->
+                                <!--<div class="col-xs-12 col-sm-4" style="color: #404040;">-->
+                                    <!--<h2><strong>2108</strong></h2>-->
+
+                                    <!--<button type="button" class="btn btn-primary btn-block" style="color: #404040;><span class="fa fa-gear"></span> Skill Reps </button>-->
+                                <!--</div>-->
+                                <!--/col-->
+                            </div>
+                            <!--/row-->
+                        </div>
+                        <!--/panel-body-->
+                    </div>
+                    <!--/panel-->
+                </div>
+                <!--/col-->
+            </div>
+            <div class="row">
+                <div id="theTopRow" class="container">
+                    <div>
+                        <h3 style="color:#404040; font-size:40px;text-align: center;">Skills </h3>
+                    </div>
+                    <div class="userSkills panel panel-default" style="visibility: visible;border: 1px solid lightslategrey;">
+                        <table id="tableSkills" class="table" style="color:#404040; font-size:32px;text-align: center">
+
+                            <thead>
+
+                            </thead>
+                            <tbody>
+                            <!--insert rows from storage-->
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 style="color:#404040; font-size:40px;text-align: center;">Contacts </h3>
+                    </div>
+                    <div class="userContacts panel panel-default" style="visibility: visible;border: 1px solid lightslategrey;">
+                        <table id="tableContacts" class="table" style="color:#404040; font-size:32px;text-align: center">
+
+                            <thead>
+
+                            </thead>
+                            <tbody>
+                            <!--insert rows from storage-->
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--<div class="panel panel-default">-->
+                        <!--<div class="panel-body">Content here..</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="panel panel-default">-->
+                        <!--<div class="panel-body">Content here..</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+      </div>
+    </div>
+    <section>
+    </section>
+    <script src="js/bootstrap.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+    <script src="js/profile.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-63779053-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
